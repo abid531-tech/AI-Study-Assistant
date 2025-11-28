@@ -14,7 +14,7 @@ subprocess.run([
     "pip", "uninstall", "langchain",
     "langchain-grpc", "langchain-community", "y"])
 subprocess.run(["pip", "install", "langchain==0.1.20"]) \
-             langchain-groq==0.1.4 \
+subprocess.run(["pip", "install", "langchain-groq==0.1.4"])\
              chromadb==1.3.5 \
              pypdf==4.2.0 \
              sentence-transformers==2.7.0 \
