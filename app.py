@@ -13,7 +13,7 @@ Original file is located at
 subprocess.run([
     "pip", "uninstall", "langchain",
     "langchain-grpc", "langchain-community", "y"])
-!pip install langchain==0.1.20 \
+subprocess.run(["pip", "install", "langchain==0.1.20"]) \
              langchain-groq==0.1.4 \
              chromadb==1.3.5 \
              pypdf==4.2.0 \
