@@ -10,8 +10,9 @@ Original file is located at
 # Step 1: Installing Required Libraries
 # Downgrading to a stable version (0.1.20). It fixes the issue where classes like RetrievalQA were moved or deprecated in newer versions (0.2.x).
 
-!pip uninstall langchain langchain-groq langchain-community -y
-
+subprocess.run([
+    "pip", "uninstall", "langchain",
+    "langchain-grpc", "langchain-community", "y"])
 !pip install langchain==0.1.20 \
              langchain-groq==0.1.4 \
              chromadb==1.3.5 \
